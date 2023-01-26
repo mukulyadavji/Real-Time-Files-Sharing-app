@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+
+
+
+
+
+        <div class="fluid-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" style="position: fixed">
+                <div class="item active">
+                  <img src="https://images.unsplash.com/photo-1558743941-459179fe00e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Los Angeles" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="https://images.unsplash.com/photo-1527792931932-443873b57953?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="https://images.unsplash.com/photo-1611258623154-c01feea09b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=828&q=80" alt="New york" style="width:100%;">
+                </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        <div class="app">
+            <div class="screen join-screen active">
+                <div class="form">
+                    <h2>Share your file securely</h2>
+                        <div class="form-input">
+                        <label for="join-id">Join ID</label>
+                        <input type="text" id="join-id"> 
+                        </div>
+                    <div class="form-input">
+                        <button id="receiver-start-con-btn">Connect</button>
+                    </div>                    
+                </div>
+            </div>
+            <div class="screen fs-screen">
+                <div class="files-list">
+                    <div class="title">Shared files:</div>
+                </div>
+            </div>
+
+        </div>
+       
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js" ></script>
+       <script type="text/javascript" src="socket.io/socket.io.js"></script>
+       <script type="text/javascript" src="receiver.js"></script>
+    </body>
+</html>
